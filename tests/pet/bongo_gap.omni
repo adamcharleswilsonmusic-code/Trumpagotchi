@@ -1,0 +1,19 @@
+# Real UI: a short note leaves a little groove, but idle never starts it.
+wait 500
+expect bongos 0
+key w0 down
+wait 150
+key w0 up
+wait 1200
+expect active 0
+expect bongos >2
+key w2 down
+wait 150
+key w2 up
+wait 3500
+expect active 0
+# Hide idle walking/footsteps so this measures the instrument's release only.
+tap HOME
+peakreset
+wait 2000
+expect peak_db_max -45

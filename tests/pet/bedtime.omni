@@ -1,0 +1,29 @@
+wait 21000
+tapkey b3
+expect sleeping 1
+expect action 10
+wait 200
+shot leaving-chair.png
+wait 1400
+expect action 4
+wait 700
+shot walking-to-bed.png
+wait 1200
+shot direct-tucked-in.png
+wait 1200
+expect action 0
+shot tucked-in.png
+wait 450
+shot drifting-zs.png
+# Wake gets out of bed; resting again can interrupt that movement.
+tapkey b3
+expect sleeping 0
+expect action 9
+tapkey b3
+expect action 4
+wait 800
+tapkey b3
+expect sleeping 0
+expect action 0
+wait 2600
+expect action 0

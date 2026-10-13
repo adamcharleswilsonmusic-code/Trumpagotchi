@@ -1,0 +1,10 @@
+wait 1000
+shot chair-empty.png
+tapkey b1
+wait 100
+shot praise-low.png
+wait 500
+shot praise-high.png
+wait 2400
+wait 18000
+shot chair-seated.png

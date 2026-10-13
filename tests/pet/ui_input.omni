@@ -1,0 +1,57 @@
+# UI input: silent idle, no MIDI care, independent local/MIDI release, quiet SAVE.
+wait 200
+expect triggers 0
+expect bongos 0
+midi 90 36 7f
+wait 20
+expect triggers 0
+expect food 75
+tapkey b0
+expect food 100
+expect triggers 0
+key w0 down
+midi 90 35 7f
+wait 100
+expect triggers 2
+key w0 up
+wait 200
+expect active 1
+midi 80 35 00
+wait 1000
+expect active 0
+key w1 down
+wait 100
+tap SAVE
+wait 3200
+expect store_writes 0
+key w1 up
+wait 1000
+expect store_writes 0
+wait 2500
+expect store_writes 1
+# Remote black-key note is ignored too.
+midi 90 3f 7f
+wait 20
+expect triggers 3
+key w2 down
+wait 100
+midi b0 7b 00
+wait 100
+expect active 0
+key w2 up
+wait 100
+# Sleep accepts white synth input but does not begin bongo accompaniment.
+tapkey b3
+expect sleeping 1
+wait 1500
+reboot
+wait 200
+expect triggers 0
+tapkey b3
+expect sleeping 1
+key w3 down
+wait 500
+expect triggers 1
+expect bongos 0
+expect sleeping 1
+key w3 up

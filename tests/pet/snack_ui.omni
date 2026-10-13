@@ -1,0 +1,20 @@
+wait 200
+expect snacks 3
+shot stock-full.png
+wait 69000
+expect snacks 2
+expect action 6
+shot snack-approach.png
+wait 1300
+shot snack-eating.png
+wait 3000
+expect action 0
+shot snack-finished.png
+expect cleanliness 71
+# Accepted manual feeding still eats and refills the stock.
+wait 54000
+tapkey b0
+expect snacks 3
+expect action 10
+wait 1600
+expect action 1

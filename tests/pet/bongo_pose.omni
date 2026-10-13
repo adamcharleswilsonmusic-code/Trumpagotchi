@@ -1,0 +1,7 @@
+wait 200
+key w0 down
+wait 350
+shot bongo-a.png
+wait 110
+shot bongo-b.png
+key w0 up

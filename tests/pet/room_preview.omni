@@ -1,0 +1,6 @@
+wait 1000
+shot room-day.png
+wait 11000
+shot room-walk.png
+wait 9000
+shot room-news.png

@@ -1,0 +1,29 @@
+wait 200
+tapkey b0
+expect food 100
+expect action 1
+wait 1500
+tapkey b0
+expect food 100
+wait 1150
+expect action 0
+# Rejected repeat must not restart burger animation.
+tapkey b0
+expect action 0
+# Praise animation is distinct and finite.
+tapkey b1
+expect action 2
+wait 2300
+expect action 0
+# Rest interrupts an accepted animation immediately.
+reboot
+wait 1200
+tapkey b0
+expect action 1
+tapkey b3
+expect sleeping 1
+expect action 4
+wait 3000
+# The more-rested pet may already be in the waking exit; let that finish too.
+wait 3500
+expect action 0

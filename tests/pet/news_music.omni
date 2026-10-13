@@ -1,0 +1,22 @@
+wait 17000
+key w0 down
+wait 600
+expect bongo_active 1
+wait 600
+expect bongo_active 0
+expect active 1
+midi 90 37 7f
+wait 200
+expect bongo_active 0
+expect active 5
+shot news-solo-keyboard.png
+key w0 up
+midi 80 37 00
+wait 4000
+expect bongo_active 0
+expect active 0
+wait 17000
+key w0 down
+wait 300
+expect bongo_active 1
+key w0 up

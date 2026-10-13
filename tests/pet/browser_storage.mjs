@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import vm from 'node:vm';
+import assert from 'node:assert/strict';
+const html=fs.readFileSync('web/emu/index.html','utf8');
+const storageCode=html.slice(html.indexOf('function loadStore()'),html.indexOf('// ---------------------------------------------------------------- switching on'));
+let saved=null,fail=false;const label={textContent:''};
+const context=vm.createContext({STORE_KEY:'test',document:{getElementById:()=>label},localStorage:{setItem:(k,v)=>{if(fail)throw Error('blocked');saved=v;},getItem:()=>saved},Uint8Array,Date,btoa:s=>Buffer.from(s,'binary').toString('base64'),atob:s=>Buffer.from(s,'base64').toString('binary')});
+vm.runInContext(storageCode,context);
+assert(vm.runInContext('saveStore({0:new Uint8Array([1,2,3])})',context));
+assert.match(label.textContent,/Saved in this browser/);
+assert.equal(vm.runInContext('new Uint8Array(loadStore()[0])[1]',context),2);
+fail=true;assert.equal(vm.runInContext('saveStore({0:new Uint8Array([4,5,6])})',context),false);
+assert.match(label.textContent,/Save failed/);assert.equal(JSON.parse(saved)[0],'AQID');
+fail=false;assert(vm.runInContext('saveStore(pendingStore)',context));
+assert.equal(vm.runInContext('new Uint8Array(loadStore()[0])[1]',context),5);
+assert.equal(vm.runInContext('pendingStore',context),null);
+assert(!html.includes('localStorage.removeItem'), 'Restart preview must retain saved progress');
+console.log('Browser storage PASS: durable roundtrip, visible failure, retained previous save, retry, non-destructive restart.');

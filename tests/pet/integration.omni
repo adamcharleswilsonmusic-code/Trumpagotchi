@@ -1,0 +1,47 @@
+# Full UI/audio/persistence smoke test, no device access.
+wait 1000
+expect triggers 0
+expect bongos 0
+expect peak_db_max -120
+shot idle.png
+tapkey b0
+wait 200
+expect food >75
+expect triggers 0
+tapkey b0
+wait 200
+expect triggers 0
+tap HOME
+wait 200
+shot guide.png
+tap HOME
+key w0 down
+wait 1200
+expect triggers 1
+expect bongos >0
+expect peak_db_min -35
+shot playing.png
+key w0 up
+wait 3500
+expect active 0
+tap SAVE
+wait 500
+expect store_writes >0
+reboot
+wait 300
+expect food >75
+expect bongos 0
+tapkey b3
+wait 300
+expect sleeping 1
+shot sleeping.png
+key w2 down
+wait 1000
+expect bongos 0
+key w2 up
+wait 1000
+expect active 0
+tapkey b3
+wait 300
+expect sleeping 0
+shot awake.png
