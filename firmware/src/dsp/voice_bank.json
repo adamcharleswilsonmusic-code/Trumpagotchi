@@ -1,0 +1,141 @@
+{
+  "sample_rate": 16000,
+  "bit_depth": 16,
+  "channels": 1,
+  "pcm_bytes": 413418,
+  "seconds": 12.9193125,
+  "samples": [
+    {
+      "id": "EAT_TV",
+      "source_file": "eat 1.wav",
+      "trigger": "Burger from the stack while watching TV",
+      "frames": 20671,
+      "seconds": 1.2919375,
+      "source_sha256": "12d1bf65db7063f1c8025566e5694841fbf5b6efbe1b11a2a7777a667a908b4e",
+      "pcm_sha256": "7503b874cebf8fed47118a51843a98196f289c9d0d30831a1501f37b3ea3f4f8",
+      "source_url": null,
+      "rights": "User-supplied recordings; specific source links pending"
+    },
+    {
+      "id": "EAT_FEED",
+      "source_file": "eat 2.wav",
+      "trigger": "User feeds him",
+      "frames": 32483,
+      "seconds": 2.0301875,
+      "source_sha256": "a434cbcda646422c588601515f2cae5604a6866a31dd4e7e446f8d0ca30e8df9",
+      "pcm_sha256": "705c4ba10ebd0b61a8f1b67bb1890a8f9cde3dc690b753bf5fc10dbdfcc46f70",
+      "source_url": null,
+      "rights": "User-supplied recordings; specific source links pending"
+    },
+    {
+      "id": "NEWS",
+      "source_file": "fake news.wav",
+      "trigger": "Occasional complaint while watching news",
+      "frames": 11074,
+      "seconds": 0.692125,
+      "source_sha256": "d1085c7769c3aca0cf1786af65e42fba53990320ee774a7d22c6d865719b3160",
+      "pcm_sha256": "110d288a142633478656ac2d7a715441d5ccaf26e1068774d66e53f576c204e5",
+      "source_url": null,
+      "rights": "User-supplied recordings; specific source links pending"
+    },
+    {
+      "id": "HUNGRY",
+      "source_file": "i want food.wav",
+      "trigger": "Food at or below 25",
+      "frames": 14027,
+      "seconds": 0.8766875,
+      "source_sha256": "51ab7104b614b9fdfff4255d69a49803a8946b18003147632484adab7ef48b67",
+      "pcm_sha256": "b56a8c2b9e141ff535c62636cabb9ecc2d93f70e3800937cec2709d3918179ca",
+      "source_url": null,
+      "rights": "User-supplied recordings; specific source links pending"
+    },
+    {
+      "id": "TIRED",
+      "source_file": "i want sleep.wav",
+      "trigger": "Energy at or below 20, or nighttime",
+      "frames": 12181,
+      "seconds": 0.7613125,
+      "source_sha256": "080a13854ebb0f12c4ebc35fdd9ff38c2614e2368d0496784a49a7f6080fdc6c",
+      "pcm_sha256": "cde7dec3304d4baac4050058553a9e6d78cf30cb2f19edf997149b3cb74f2959",
+      "source_url": null,
+      "rights": "User-supplied recordings; specific source links pending"
+    },
+    {
+      "id": "REFUSE",
+      "source_file": "id rather not.wav",
+      "trigger": "Refused care action",
+      "frames": 12550,
+      "seconds": 0.784375,
+      "source_sha256": "b3635fc228641f89b552b368804035f80f79845e61f29cc5abbf93a23e9bacd7",
+      "pcm_sha256": "41b55039f980f075eba60a430e5c3036ffe7be843d258cf1c2368a272338c274",
+      "source_url": null,
+      "rights": "User-supplied recordings; specific source links pending"
+    },
+    {
+      "id": "PERFECT",
+      "source_file": "perfect.wav",
+      "trigger": "After deposit and after Poo finishes",
+      "frames": 16241,
+      "seconds": 1.0150625,
+      "source_sha256": "cda8a34f04cbfe197b7a1a40dd8bffe1a64edf53535fdedfca4682ee396e1e6a",
+      "pcm_sha256": "77801feccffdced5aad4706c16902e6ba835a075cf421d9f4e4738784188fb57",
+      "source_url": null,
+      "rights": "User-supplied recordings; specific source links pending"
+    },
+    {
+      "id": "POO",
+      "source_file": "poo.wav",
+      "trigger": "During the poo crouch",
+      "frames": 13644,
+      "seconds": 0.85275,
+      "source_sha256": "0e2ff51cfb6239c93946141f34e3906de4d77b5232491208543b2fd00868adcd",
+      "pcm_sha256": "c3af464c8af84839033d7a4cb0ce4e29ffe14789e7e39f44622b752d1304b75e",
+      "source_url": null,
+      "rights": "User-supplied recordings; specific source links pending"
+    },
+    {
+      "id": "SNORE",
+      "source_file": "snore.wav",
+      "trigger": "While tucked into bed",
+      "frames": 22161,
+      "seconds": 1.3850625,
+      "source_sha256": "37869abf621b7ed2de60a4b3574a5a060a1990e448b0cc8c670c5725ea987db9",
+      "pcm_sha256": "85687a909e855b9964254d1f48662a9b5adf59a1eb999bc3e9a23fb400ff2d3a",
+      "source_url": null,
+      "rights": "User-supplied recordings; specific source links pending"
+    },
+    {
+      "id": "PRAISE_1",
+      "source_file": "thank you thank you.wav",
+      "trigger": "Praise alternate one",
+      "frames": 20671,
+      "seconds": 1.2919375,
+      "source_sha256": "1e465d830591f8c7e991df039079784babe8527615c6f9b9c9403ad622f0193f",
+      "pcm_sha256": "29a059525c69163eff02d463e8af07cbf68518244dd12e03b63ccfc1ee859bfc",
+      "source_url": null,
+      "rights": "User-supplied recordings; specific source links pending"
+    },
+    {
+      "id": "PRAISE_2",
+      "source_file": "thank you very much.wav",
+      "trigger": "Praise alternate two",
+      "frames": 16241,
+      "seconds": 1.0150625,
+      "source_sha256": "4d6932ab243f9fd87fdebe7ed0fdb3d6a56738394546c1c70269ff7c67be0ee0",
+      "pcm_sha256": "591be22940ae6f6e43be13491b2fdc07955cfdfb7192e70e8b4eb3157234720f",
+      "source_url": null,
+      "rights": "User-supplied recordings; specific source links pending"
+    },
+    {
+      "id": "CLEAN",
+      "source_file": "very clean.wav",
+      "trigger": "Accepted CLEAN action",
+      "frames": 14765,
+      "seconds": 0.9228125,
+      "source_sha256": "c2400c0c2f31ed958ed4cec428f9f12f741ccb7cc02c8b516e527ead6c6a2a1e",
+      "pcm_sha256": "30cb4e896930dbbb23075c6411a64b77ed03da997ac7e0ba5473c0f95f1d3b93",
+      "source_url": null,
+      "rights": "User-supplied recordings; specific source links pending"
+    }
+  ]
+}

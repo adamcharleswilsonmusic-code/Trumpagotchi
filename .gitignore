@@ -1,0 +1,9 @@
+build/
+.venv/
+tooling/
+__pycache__/
+*.pyc
+*.o
+.DS_Store
+.env
+.env.*
