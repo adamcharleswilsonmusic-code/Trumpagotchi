@@ -1,0 +1,9 @@
+{
+  "what": "An unofficial parody virtual pet with a playable pentatonic keyboard. Feed, praise, clean up after and rest the pet. When he's happy, he joins your playing on bongos.",
+  "author": "Trust This Mechanism",
+  "kinds": [
+    "other"
+  ],
+  "cheat": "https://github.com/adamcharleswilsonmusic-code/Trumpagotchi/releases/download/v1.0.0/trumpagotchi-quick-start.pdf",
+  "image": "firmware-hub.png"
+}
