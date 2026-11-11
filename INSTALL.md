@@ -9,4 +9,4 @@ python tools/fm1_install.py --info
 python tools/fm1_install.py trumpagotchi.fwsc
 ```
 
-The first command only reads the device identity. The second asks for confirmation before installing. Keep USB connected until the write and restart finish. Expected identity: **FM-1_710**. The [quick-start guide](docs/trumpagotchi-quick-start.pdf) covers playing and care.
+The first command only reads the device identity. The second asks for confirmation before installing. Keep USB connected until the write and restart finish. Expected identity: **FM-1_878670101**. The [quick-start guide](docs/trumpagotchi-quick-start.pdf) covers playing and care.

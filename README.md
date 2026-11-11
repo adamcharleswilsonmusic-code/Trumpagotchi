@@ -41,7 +41,7 @@ python tools/fm1_install.py --info
 python tools/fm1_install.py trumpagotchi.fwsc
 ```
 
-Read the prompt, check the intended device and type `y`. Keep USB connected until the write and restart finish. A successful install reports **FM-1_710**.
+Read the prompt, check the intended device and type `y`. Keep USB connected until the write and restart finish. A successful install reports **FM-1_878670101**.
 
 This replaces the device’s current firmware. The supplied package has been installed and its restart checked on our FM-1; not every starting firmware or computer setup has been tested. If the installer rejects the package or device, stop and keep the error message rather than forcing it.
 

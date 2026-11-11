@@ -17,10 +17,10 @@ export X0X_FONTSET=terminus
 export JIELI_DOCKER_IMAGE='debian:bookworm-slim@sha256:7c7b2c966bc9ee8cedfeef67e0e279108992c77681fa595db4a9d65c06ccc587'
 python tools/import_voice_samples.py
 sh tests/run_tests.sh
-sh build.sh
+sh build.sh --release 1.0.1
 ```
 
-Output: `build/trumpagotchi-preview.fwsc`, identity **FM-1_710**, plus `build/omni.bin` and `build/loader/ota.bin`. Builds and tests do not install or access hardware. The published firmware is the tested frozen build, renamed for downloading.
+Output: `build/trumpagotchi-1.0.1.fwsc`, identity **FM-1_878670101**, plus `build/omni.bin` and `build/loader/ota.bin`. Builds and tests do not install or access hardware. Verify the package and test it on hardware before publication.
 
 The tested compiler was jieli-linux-toolchains-20260730.1; the official download endpoint can change. SDK commit: d179b4484759423312073f5fbb232501aa491047. The build checks the packaged SDK files, application and RAM capacity, RAM-only flash routines and hardware access boundaries.
 

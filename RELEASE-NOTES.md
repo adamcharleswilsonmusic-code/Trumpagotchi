@@ -1,4 +1,8 @@
-# Trumpagotchi — first FM-1 release
+# Trumpagotchi 1.0.1
+
+This release uses the stable firmware and package identity **FM-1_878670101**. On an FM-1 with the original flash chip, this package installed from both M-VAVE V15 and Spring Poly 1.4, reported the new identity over USB MIDI, and switched back to both firmwares.
+
+## 1.0.0 — first FM-1 release
 
 A burger-powered virtual pet with an ego problem and surprisingly good bongo timing.
 
