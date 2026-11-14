@@ -84,3 +84,5 @@ When **Food, Mood and Energy** all reach zero, **Game Over** appears with a quie
 The ready-to-install package corresponds to the included source and twelve voice clips. Developers can follow [BUILDING.md](BUILDING.md). [Voice-source credits](docs/VOICE-SOURCES.md) link to the government recordings used during editing.
 
 Code and original artwork: **GPL-3.0-only**. Recording rights are separate from the code licence. Inherited platform, SDK, font and sound-data notices are preserved in [LICENSING.md](LICENSING.md) and `LICENSES/`.
+
+You can also try Trumpagotchi in the browser, no flashing needed, in the free community [FM-1 Emulator](https://fm1-emulator.atst.tools/).
